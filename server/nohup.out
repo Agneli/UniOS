@@ -584,3 +584,56 @@ debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data"
 debug: websocket writing 5:::{"name":"osInfototalmem","args":[{"t":"totalmem","data":1002.9921875}]}
 debug: websocket writing 5:::{"name":"osInfofreemem","args":[{"t":"freemem","data":72.34765625}]}
 debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126074.752309392}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.46435546875,0.353515625,0.265625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126075.752653486}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.42724609375,0.34765625,0.26416015625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126076.754432893}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126077.751065146}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.42724609375,0.34765625,0.26416015625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126078.751107639}]}
+debug: websocket writing 5:::{"name":"osInfototalmem","args":[{"t":"totalmem","data":1002.9921875}]}
+debug: websocket writing 5:::{"name":"osInfofreemem","args":[{"t":"freemem","data":71.85546875}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.42724609375,0.34765625,0.26416015625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126079.754887059}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126080.751169973}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.39306640625,0.341796875,0.2626953125]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126081.751326468}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.39306640625,0.341796875,0.2626953125]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126082.753399844}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126083.751904543}]}
+debug: websocket writing 5:::{"name":"osInfototalmem","args":[{"t":"totalmem","data":1002.9921875}]}
+debug: websocket writing 5:::{"name":"osInfofreemem","args":[{"t":"freemem","data":71.50390625}]}
+debug: emitting heartbeat for client w-VkzkMwj_L10-eTimTC
+debug: websocket writing 2::
+debug: set heartbeat timeout for client w-VkzkMwj_L10-eTimTC
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.39306640625,0.341796875,0.2626953125]}]}
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client w-VkzkMwj_L10-eTimTC
+debug: set heartbeat interval for client w-VkzkMwj_L10-eTimTC
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126084.752222348}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.39306640625,0.341796875,0.2626953125]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126085.752592359}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126086.752241167}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.36181640625,0.3359375,0.26123046875]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126087.752333756}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.36181640625,0.3359375,0.26123046875]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126088.938792424}]}
+debug: websocket writing 5:::{"name":"osInfototalmem","args":[{"t":"totalmem","data":1002.9921875}]}
+debug: websocket writing 5:::{"name":"osInfofreemem","args":[{"t":"freemem","data":71.875}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126089.754569071}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.36181640625,0.3359375,0.26123046875]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126090.750857664}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.3330078125,0.33056640625,0.259765625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126091.756546267}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126092.752951103}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.3330078125,0.33056640625,0.259765625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126093.751301219}]}
+debug: websocket writing 5:::{"name":"osInfototalmem","args":[{"t":"totalmem","data":1002.9921875}]}
+debug: websocket writing 5:::{"name":"osInfofreemem","args":[{"t":"freemem","data":71.1484375}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.3330078125,0.33056640625,0.259765625]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126094.77024781}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126095.779903618}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.30615234375,0.3251953125,0.25830078125]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126096.751540165}]}
+debug: websocket writing 5:::{"name":"osInfoloadavg","args":[{"t":"loadavg","data":[0.30615234375,0.3251953125,0.25830078125]}]}
+debug: websocket writing 5:::{"name":"osInfouptime","args":[{"t":"uptime","data":126097.752348825}]}
