@@ -8,7 +8,7 @@ A lightweight NodeJS and HTML5 interface for manage linux hosts through browser 
 
 ```bash
 git clone git@github.com:michelwilhelm/unios.git
-cd unios
+cd unios/server
 npm install
 npm start
 ```
