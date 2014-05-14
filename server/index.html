@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>osInfo</title>
+<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td>endianness</td>
+    <td class="endianness"></td>
+  </tr>
+  <tr>
+    <td>loadavg</td>
+    <td class="loadavg"></td>
+  </tr>
+  <tr>
+    <td>uptime</td>
+    <td class="uptime"></td>
+  </tr>
+  <tr>
+    <td>freemem</td>
+    <td><span class="freemem"></span>Mb</td>
+  </tr>
+  <tr>
+    <td>totalmem</td>
+    <td><span class="totalmem"></span>Mb</td>
+  </tr>
+  <!--<tr>
+    <td>cpus</td>
+    <td class="cpus"></td>
+  </tr>-->
+  <tr>
+    <td>type</td>
+    <td class="type"></td>
+  </tr>
+  <tr>
+    <td>release</td>
+    <td class="release"></td>
+  </tr>
+  <tr>
+    <td>hostname</td>
+    <td class="hostname"></td>
+  </tr>
+  <!--<tr>
+    <td>networkInterfaces</td>
+    <td class="networkInterfaces"></td>
+  </tr>-->
+  <tr>
+    <td>arch</td>
+    <td class="arch"></td>
+  </tr>
+  <tr>
+    <td>platform</td>
+    <td class="platform"></td>
+  </tr>
+  <tr>
+    <td>tmpDir</td>
+    <td class="tmpDir"></td>
+  </tr>
+  <!--<tr>
+    <td>getNetworkInterfaces</td>
+    <td class="getNetworkInterfaces"></td>
+  </tr>-->
+</table>
+<script>
+  var socket = io.connect('http://localhost:8765/');
+/*  socket.on('osInfoResponse', function (data) {
+    console.log(data);
+  });
+
+  socket.emit('osInfo', function (data) {
+      console.log(data);
+  });
+*/
+  socket.on('connect', function (data) {
+      socket.emit('osInfo', { my: 'data' });
+  });
+
+socket.on('osInfoHostnameRes', function (data) {
+    document.querySelector('.hostname').innerHTML = data;
+});
+
+function send (socket, type, timeDelay) {
+    socket.emit('osInfo'+type, {t:type});
+
+    if (typeof timeDelay != 'undefined') {
+        setInterval(function() {
+          socket.emit('osInfo'+type, {t:type});
+        }, timeDelay);
+    } else {
+        socket.emit('osInfo'+type, {t:type});
+    }
+    
+}
+var reqs = [
+    'endianness',
+    'hostname',
+    'loadavg',
+    'uptime',
+    'freemem',
+    'totalmem',
+    'type',
+    'release',
+    'arch',
+    'platform',
+    'tmpDir'
+];
+
+for (i=0; i<reqs.length; i++) {
+    socket.emit('osInfo'+reqs[i], {t:reqs[i]});
+    socket.on('osInfo'+reqs[i], function (data) {
+        document.querySelector('.'+data.t).innerHTML = data.data;
+    });
+}
+
+function update () {
+    send(socket, 'hostname');
+    send(socket, 'endianness');
+    send(socket, 'type');
+    send(socket, 'release');
+    send(socket, 'arch');
+    send(socket, 'platform');
+    send(socket, 'tmpDir');
+    send(socket, 'loadavg', 1500);
+    send(socket, 'uptime', 1000);
+    send(socket, 'totalmem', 5000);
+    send(socket, 'freemem', 5000);
+}
+update();
+</script>
+</body>
+</html>
+
